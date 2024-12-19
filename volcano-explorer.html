@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volcano Explorer - React App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="pls.png" type="image/x-icon">
+</head>
+
+<body>
+
+  
+  <div class="sidebar">
+    <ul>
+      <li><a class="side-bar-a" href="#what-is-volcano">What is Volcano Explorer?</a></li>
+      <li><a href="#use-of-endpoints">Use of Endpoints</a></li>
+      <li><a href="#module-use">Module Use</a></li>
+      <li><a href="#application-design">Application Design</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+    </ul>
+  </div>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html">
+        <img class="logo" img src="sabrinalogo.png" alt="Sabrina Dragani"></a>
+      <ul class="nav-links">
+        <p>Volcano Explorer</p>
+      </ul>
+    </nav>
+  </header>
+  <div class="project-images">
+    <section class="hero">
+      <img src="2.png" alt="TabLED - The Interactive LED Table" class="hero-image" />
+      <div class="hero-content">
+        <h2 class="title">Volcano Explorer</h2>
+        <h3 class="sub">React App and API</h3>
+        <p class="subheader">
+
+          This assignment required the development of a React-based web application for users to access and analyse
+          volcano data via a REST API.
+      </div>
+    </section>
+  </div>
+
+  <section id="what-is-volcano"></section>
+  <div class="main-project-content">
+    <section class="details">
+
+      <h2 class="intro">What is Volcano Explorer?</h2>
+      <p class="introp small">
+        This assignment required the development of a React-based web application for users to access and analyse
+        volcano data via a REST API. The application serves as a centralised platform for exploring and analysing the
+        global distribution of volcanoes, offering detailed insights into each volcano's location, eruption history,
+        elevation, and population density across different regions and countries. By presenting volcano information in
+        an organized and user-friendly interface, the app allows for exploration and understanding of volcanic activity
+        worldwide.
+
+      </p>
+    </section>
+
+    <div class="complimentary-image-container fade-in">
+      <img src="MOCKUPS.png" alt="TabLED - The Interactive LED Table" class="complimentary-image" />
+    </div>
+
+
+    <section id="use-of-endpoints"></section>
+    <section class="details module fade-in">
+      <h2>Use of Endpoints</h2>
+    
+      <div class="expandable">
+        <div class="summary">
+          <span class="title">/countries</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p>Allows for country selection.</p>
+        </div>
+      </div>
+    
+      <div class="expandable">
+        <div class="summary">
+          <span class="title">/volcanoes</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p>Allows for volcano selections and shows some extra volcano information.</p>
+        </div>
+      </div>
+    
+      <div class="expandable">
+        <div class="summary">
+          <span class="title">/volcanoes{id}</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p>Provides specific info for each volcano.</p>
+        </div>
+      </div>
+
+      <div class="expandable">
+        <div class="summary">
+          <span class="title">/user/register</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p>Allows user to register an account.</p>
+        </div>
+      </div>
+
+      <div class="expandable">
+        <div class="summary">
+          <span class="title">/user/login</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p>Allows user to login to their account.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section phone fade-in">
+      <div class="container-phone fade-in">
+        <video autoplay loop muted playsinline>
+          <source src="volcanovid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container-phone fade-in">
+        <h2>Application Preview</h2>
+        <p class="general-project-text">text abt video</p>
+      </div>
+    </section>
+
+    <section id="module-use"></section>
+    <section class="details module fade-in">
+      <h2>Module Use</h2>
+    
+      <div class="expandable">
+        <div class="summary">
+          <img src="pigeonmaps.svg" alt="Pigeon Maps Logo" class="logo">
+          <span class="title">Pigeon Maps</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p><a href="https://pigeon-maps.js.org/">Pigeon Maps</a> is a React library for rendering customizable maps using Leaflet.js.</p>
+        </div>
+      </div>
+    
+      <div class="expandable">
+        <div class="summary">
+          <img src="aggrid.png" alt="Ag-grid-react Logo" class="logo">
+          <span class="title">Ag-grid-react</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p><a href="https://www.ag-grid.com/">Ag-grid-react</a> provides advanced grid and table functionality for React applications.</p>
+        </div>
+      </div>
+    
+      <div class="expandable">
+        <div class="summary">
+          <img src="chart.js.svg" alt="Chart.js Logo" class="logo">
+          <span class="title">Chart.js</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+          <p><a href="https://www.chartjs.org/">Chart.js</a> is a JavaScript library for creating responsive, interactive charts.</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <script>
+      document.querySelectorAll('.expandable').forEach((expandable) => {
+  const summary = expandable.querySelector('.summary');
+  summary.addEventListener('click', () => {
+    expandable.classList.toggle('open');
+
+    // Close all others if needed (optional)
+    document.querySelectorAll('.expandable').forEach((other) => {
+      if (other !== expandable) {
+        other.classList.remove('open');
+      }
+    });
+  });
+});
+
+    </script>
+
+<section id="application-design"></section>
+    <section class="details fade-in application-design">
+      <h2>Application Design</h2>
+      <p class="general-project-text">
+        I aimed for a clean, user-friendly design with a minimalist aesthetic. The site features large, relevant images
+        to fill blank spaces and a color palette that's easy on the eyes but still modern. The font choice, Helvetica
+        Neue, aligns with the minimalist theme. Below are some wireframe sketches that guided the final design.<br><br>
+      </p>
+
+      <div class="complimentary-image-container-small fade-in">
+        <img src="sketch.png" alt="TabLED - The Interactive LED Table" class="complimentary-image-small" />
+      </div>
+      <p class="general-project-text">
+        The navigation bar is simple and includes only the essentials: the site logo, explore page, login, and register.
+        When logged in, the login/register buttons transform into a logout button. The nav bar is sticky and accessible
+        on every page to help users navigate easily without getting lost.
+        <br><br>
+      </p>
+      <div class="complimentary-image-container-small fade-in">
+        <img src="navinfo.png" alt="TabLED - The Interactive LED Table" class="complimentary-image-small" />
+      </div>
+      <p class="general-project-text">
+        The only pages users can't access directly are the individual volcano pages, due to the large number of
+        volcanoes. They must first select a country on the explore page. Navigation is simple, with options to go back
+        via the nav bar or browser back button.
+      </p>
+    </section>
+
+    <section id="accessibility"></section>
+    <section class="details fade-in">
+      <h2>Accessibility</h2>
+      <p>
+        This is an analysis of the site from the perspective of accessibility. I have used the checklist from the W3C to
+        assist.<br><br>
+
+      <div class="dotpoints">
+        <li>Provided a text equivalent for every non-text element.</li>
+        <li>All information conveyed with colour is also available without colour.</li>
+        <li> All documents can be read without stylesheets.</li>
+        <li> Text equivalents are updated when dynamic content changes.</li>
+        <li> Screen does not flicker.</li>
+        <li> Language used is simple, appropriate, and relevant.</li>
+      </div>
+      </p>
+    </section>
+
+
+    <div class="volcano-vid">
+      <section class="video-section fade-in">
+        <video class="bigger-vid" autoplay loop muted playsinline>
+          <source src="volcanovid2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </div>
+
+
+
+    </section>
+
+
+
+
+    <script>
+      function playVideo() {
+        document.querySelector(".video-thumbnail").style.display = "none"; // Hide the thumbnail
+        document.getElementById("videoFrame").style.display = "block"; // Show the video
+      }
+    </script>
+
+
+
+
+    <p class="ending">
+      This project was an exciting opportunity to push the boundaries of conventional web design while catering to my
+      client’s creative vision. It allowed me to experiment with 3D elements in code and dive deeper into JavaScript,
+      HTML, SCSS, and various libraries to bring a truly unique concept to life. Additionally, managing version control
+      throughout the process ensured a seamless workflow and collaboration.<br><br>
+
+      <i>Eek</i> showcases my ability to merge creativity with technical expertise, delivering an interactive,
+      unconventional portfolio that serves both as an artistic statement and a functional tool. It also highlights my
+      adaptability in working closely with clients to refine and iterate ideas into a polished final product.<br><br>
+
+      Eek reflects the intersection of design and technology, and I’m proud to have developed something so distinct and
+      impactful.
+
+
+    </p>
+
+
+    <footer id="contact" class="footer">
+      <h2>Contact Me</h2>
+      <form
+      action="https://formspree.io/f/xdkoyrep"
+      method="POST"
+      class="styled-form"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+    <p>
+      <a href="mailto:your.email@example.com">sabrina.bridget@outlook.com</a>
+    </p><br>
+    
+      <p class="tiny">I made this website from scratch to showcase my skills! 🐸</p>
+
+    
+    </footer>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      // Select all elements with the 'fade-in' class
+      const fadeElements = document.querySelectorAll('.fade-in');
+
+      // Function to check if an element is in the viewport
+      function checkFadeIn() {
+        fadeElements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('show');
+          }
+        });
+      }
+
+      // Listen for scroll and resize events to trigger the fade-in effect
+      window.addEventListener('scroll', checkFadeIn);
+      window.addEventListener('resize', checkFadeIn);
+
+      // Initial check to fade in elements already in view
+      document.addEventListener('DOMContentLoaded', checkFadeIn);
+
+    </script>
+    <script src="project-sidebar.js"></script>
+</body>
+
+</html>

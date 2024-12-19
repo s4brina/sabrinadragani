@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TabLED - The Interactive LED Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="pls.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <ul>
+        <li><a class="side-bar-a" href="#what-is-tabled">What is TabLED?</a></li>
+        <li><a href="#project-purpose">Project Purpose</a></li>
+        <li><a href="#target-audience">Target Audience</a></li>
+        <li><a href="#interface">The Interface</a></li>
+        <li><a href="#exhibition">Exhibition and Award Night</a></li>
+        <li><a href="#technology">The Technology</a></li>
+        <li><a href="#user">User Testing</a></li>
+        <li><a href="#style">Style Guide</a></li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html"> 
+          <img class="logo" img src="sabrinalogo.png" alt="Sabrina Dragani"></a>
+        <ul class="nav-links">
+          <p>TabLED</p>
+        </ul>
+      </nav>
+    </header>
+    <div class="project-images">
+      <section class="hero">
+        <img
+          src="tabled.png"
+          alt="TabLED - The Interactive LED Table"
+          class="hero-image"
+        />
+        <div class="hero-content">
+          <h2 class="title">TabLED</h2><h3 class="sub">The Interactive LED Table</h3>
+          <p class="subheader">
+            This project showcases an interactive LED table that enhances user
+            interaction through light and color patterns. Developed as part of
+            my QUT capstone project, it combines web development, electronics,
+            and creative design.
+          </p>
+        </div>
+      </section>
+    </div>
+    <section id="what-is-tabled"></section>
+    <div class="main-project-content">
+      <section class="details">
+        <h2 class="intro">What is TabLED?</h2>
+        <p class="introp">
+          TabLED is an interactive LED table and digital interface, featuring a
+          240-LED grid designed to enhance the ambiance in social venues like
+          clubs, bars, restaurants, and events. With its intuitive interface,
+          guests can "draw" patterns, adjust brightness, and control colors and
+          animations in real time, creating custom light displays. This
+          engaging, hands-on feature transforms any environment, inviting guests
+          to interact creatively and elevating the overall social experience.
+        </p>
+      </section>
+
+      <section class="photo-grid">
+        <div class="photo-item fade-in">
+          <img src="tabled1.png" alt="Photo 1" />
+        </div>
+        <div class="photo-item fade-in">
+          <img src="tabled2.png" alt="Photo 2" />
+        </div>
+        <div class="photo-item fade-in">
+          <img src="tabled3.png" alt="Photo 3" />
+        </div>
+        <div class="photo-item fade-in">
+          <img src="tabled4.png" alt="Photo 4" />
+        </div>
+      </section>
+
+      <section id="project-purpose"></section>
+      <section class="details fade-in">
+        <h2>Project Purpose</h2>
+        <p>
+          TabLED was developed as part of my university capstone project in
+          2024. Over a period of four months, I built this interactive LED table
+          from scratch, combining electronics, a Node.js web server, and custom
+          woodworking. This project showcases my commitment to design and
+          innovation, bringing together technology and creativity to create a
+          unique, hands-on experience.
+        </p>
+      </section>
+
+      <div class="video-container fade-in">
+        <!-- Thumbnail Image -->
+        <img
+          src="PNG-image-2-1440x760.jpeg"
+          alt="Video Thumbnail"
+          class="video-thumbnail"
+          onclick="playVideo()"
+        />
+
+        <!-- YouTube Video Embed (Initially Hidden) -->
+        <div id="videoFrame" style="display: none">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EGvSu0YOL5Y?start=62"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <script>
+        function playVideo() {
+          document.querySelector(".video-thumbnail").style.display = "none"; // Hide the thumbnail
+          document.getElementById("videoFrame").style.display = "block"; // Show the video
+        }
+      </script>
+
+<section id="target-audience"></section>
+      <section class="details fade-in" >
+        <h2>Target Audience</h2>
+        <p>
+          TabLED is designed for owners and managers of social
+          venues—restaurants, bars, and clubs—who seek to add a standout feature
+          that enhances guest engagement and creates a memorable, immersive
+          experience. By transforming tables into interactive digital canvases,
+          TabLED offers venues a unique way to foster social interaction and
+          captivate guests through dynamic, hands-on lighting control.
+        </p>
+      </section>
+
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="tabled5.jpeg"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+      <section id="interface"></section>
+      <section class="details fade-in">
+        <h2>The Interface</h2>
+        <p>
+          The TabLED digital interface is designed for intuitive, real-time
+          control of the LED setup. With a 20×12 grid mirroring the physical
+          layout, users can select individual LEDs, adjusting colours,
+          brightness, and patterns seamlessly. The interface encourages quick,
+          creative interaction, making it easy for guests to personalize
+          lighting displays to suit the atmosphere of any space.
+        </p>
+      </section>
+
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="interface.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+
+      <div class="complimentary-image-container-small fade-in">
+        <img
+          src="interface5.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image-small"
+        />
+      </div>
+
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="interface2.jpeg"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+
+      <section id="exhibition"></section>
+      <section class="details fade-in">
+        <h2>The Exhibition and Award Night</h2>
+        <p>
+          After project completion, I had the amazing opportunity to present
+          TabLED at QUT (Queensland University of Technology)'s annual Design
+          Festival. I was incredibly honored to have received Adobe's award for
+          'Young Designers with Strong Creative Vision and Inspirational Work'.
+ It wasn’t easy, but every late night and ounce of effort was worth it. Hard work really does pay off!
+        </p><br>
+        <p>Below are some photos of the event and award ceremony!</p>
+      </section>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="award.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="award2.jpeg"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        /> 
+      </div>
+
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="design.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="crowd.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        />
+      </div>
+    </div>
+
+    <section id="technology"></section>
+    <section class="details fade-in">
+        <h2>The Technology</h2>
+        <p>
+            TabLED combines electronics with intuitive design, using JavaScript, Node.js, and the FastLED library to deliver real-time, responsive lighting experiences. Each interaction is powered by an Arduino microcontroller, ensuring a smooth connection between the digital interface and physical LEDs.
+
+            
+        </p>
+        <section class="details-section">
+          <div class="details">
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/js.png" alt="Pigeon Maps Logo" class="logo">
+                <span class="title">Javascript</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Proficient in creating custom Shopify themes, integrating apps, and optimizing online stores for better UX.</p>
+              </div>
+            </div>
+        
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/nodejs.png" alt="Ag-grid-react Logo" class="logo">
+                <span class="title">Node.js</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Experienced in crafting digital marketing campaigns, leveraging SEO, and using social media for growth.</p>
+              </div>
+            </div>
+        
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/arduino.png" alt="Shopify Logo" class="logo">
+                <span class="title">Arduino</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Example text for another skill to showcase responsiveness.</p>
+              </div>
+            </div>
+
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/arduino.png" alt="Shopify Logo" class="logo">
+                <span class="title">FastLED Library</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Example text for another skill to showcase responsiveness.</p>
+              </div>
+            </div>
+
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/python.png" alt="Shopify Logo" class="logo">
+                <span class="title">Python</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Example text for another skill to showcase responsiveness.</p>
+              </div>
+            </div>
+
+            <div class="expandable">
+              <div class="summary">
+                <img src="logos/webapp.png" alt="Shopify Logo" class="logo">
+                <span class="title">Web Applications</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="content">
+                <p>Example text for another skill to showcase responsiveness.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+</section>        
+<section id="process">
+  <section class="details module fade-in">
+    <h2>The Design Process</h2>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/one.png" alt="Research Icon" class="logo">
+        <span class="title">Research</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Explored user needs, market trends, and competitive products to establish design direction.</p>
+        <img src="images/research-example.jpg" alt="Research Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/two.png" alt="Personas Icon" class="logo">
+        <span class="title">User Personas & Journeys</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Created personas and mapped journeys to understand user goals and pain points.</p>
+        <img src="images/personas-example.jpg" alt="Personas Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/three.png" alt="Sketching Icon" class="logo">
+        <span class="title">Sketching</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Visualized initial ideas through sketches to brainstorm concepts and refine layouts.</p>
+        <img src="images/sketching-example.jpg" alt="Sketching Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/four.png" alt="Branding Icon" class="logo">
+        <span class="title">Branding</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Defined the visual identity with cohesive colors, typography, and logos.</p>
+        <img src="images/branding-example.jpg" alt="Branding Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/five.png" alt="Planning Icon" class="logo">
+        <span class="title">Electronics Planning</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Designed circuits and components, ensuring compatibility with interactive features.</p>
+        <img src="images/planning-example.jpg" alt="Electronics Planning Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/six.png" alt="Prototyping Icon" class="logo">
+        <span class="title">Lo-fi Prototyping</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Built quick, low-fidelity models to test basic functionality and iterate.</p>
+        <img src="images/prototyping-example.jpg" alt="Lo-fi Prototype Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/seven.png" alt="Table Icon" class="logo">
+        <span class="title">Physical Table Design</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Developed the structure and aesthetic of the table using cardboard and acrylic.</p>
+        <img src="images/table-design-example.jpg" alt="Physical Table Design Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/eight.png" alt="Materials Icon" class="logo">
+        <span class="title">Material Organisation</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Coordinated materials like glass, LEDs, and wiring for a polished build.</p>
+        <img src="images/materials-example.jpg" alt="Materials Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/nine.png" alt="User Testing Icon" class="logo">
+        <span class="title">Mid-fi Prototype & Testing</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Created functional prototypes for user feedback and tested usability.</p>
+        <img src="images/testing-example.jpg" alt="User Testing Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/ten.png" alt="Wiring Icon" class="logo">
+        <span class="title">Wiring the Electronics</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Connected LEDs, sensors, and other components for responsive interactions.</p>
+        <img src="images/wiring-example.jpg" alt="Wiring Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/eleven.png" alt="UI Icon" class="logo">
+        <span class="title">User Interface Design</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Designed a simple and intuitive interface to control the table’s features.</p>
+        <img src="images/ui-design-example.jpg" alt="UI Design Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/twelve.png" alt="Coding Icon" class="logo">
+        <span class="title">Coding the Final Program</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Implemented the code for interactivity, animations, and custom features.</p>
+        <img src="images/coding-example.jpg" alt="Coding Example">
+      </div>
+    </div>
+
+    <div class="expandable">
+      <div class="summary">
+        <img src="icons/thirteen.png" alt="Hi-fi Prototype Icon" class="logo">
+        <span class="title">Hi-fi Prototype</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="content">
+        <p>Completed the high-fidelity prototype, integrating all elements into a polished final product.</p>
+        <img src="images/hi-fi-prototype-example.jpg" alt="Hi-fi Prototype Example">
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<script>
+  document.querySelectorAll('.expandable').forEach((expandable) => {
+const summary = expandable.querySelector('.summary');
+summary.addEventListener('click', () => {
+expandable.classList.toggle('open');
+
+// Close all others if needed (optional)
+document.querySelectorAll('.expandable').forEach((other) => {
+  if (other !== expandable) {
+    other.classList.remove('open');
+  }
+});
+});
+});
+
+</script>
+
+      <section id="user"></section>
+    <section class="text-photo-section">
+        <div class="text-container fade-in">
+          <h2 class="heading2">User Testing</h2>
+          <p>
+            During class, I conducted user testing for my TabLED interface. Each participant presented their own project, and I got valuable feedback on mine. This setup allowed me to observe real-time interactions and responses to the interface.
+          </p>
+        </div>
+        <div class="photo-container fade-in">
+          <img src="usertesting.png" alt="TabLED - Interactive LED Table" />
+        </div>
+      </section>
+
+
+      <section id="style"></section>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image-2"
+        />
+        <div class="text-container">
+          <h2 class="heading2">Style Guide</h2>
+          <p>The style guide uses vibrant colors and cute characters to capture the brand’s cheerful, welcoming vibe. The bold colors bring energy and positivity, while the characters add a friendly, playful touch. Together, they create a colorful, happy feel that makes the brand approachable and memorable.</p>
+        </div>
+      </div>
+
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/2.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image3"
+        /> 
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/3.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image3"
+        /> 
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/4.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image3"
+        /> 
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/5.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image3"
+        /> 
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/6.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image3"
+        /> 
+      </div>
+      <div class="complimentary-image-container fade-in">
+        <img
+          src="style/8.png"
+          alt="TabLED - The Interactive LED Table"
+          class="complimentary-image"
+        /> 
+      </div>
+
+      <p class="ending">
+        This project highlights my full-stack approach to design and engineering, from building the physical table to designing the electronics and developing a web-based control interface. By combining custom-built hardware with a responsive web server, I created an interactive LED experience that demonstrates my skills in both physical construction and software integration, bridging hands-on craftsmanship with seamless, user-friendly technology.
+
+
+      </p>
+      
+
+      <footer id="contact" class="footer">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xdkoyrep" method="POST" class="styled-form">
+          <label>
+            Your email:
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        <p>
+          <a href="mailto:your.email@example.com">sabrina.bridget@outlook.com</a>
+        </p><br>
+    
+        <p class="tiny">I made this website from scratch to showcase my skills! 🐸</p>
+      </footer>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      // Select all elements with the 'fade-in' class
+const fadeElements = document.querySelectorAll('.fade-in');
+
+// Function to check if an element is in the viewport
+function checkFadeIn() {
+  fadeElements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      element.classList.add('show');
+    }
+  });
+}
+
+// Listen for scroll and resize events to trigger the fade-in effect
+window.addEventListener('scroll', checkFadeIn);
+window.addEventListener('resize', checkFadeIn);
+
+// Initial check to fade in elements already in view
+document.addEventListener('DOMContentLoaded', checkFadeIn);
+
+    </script>
+    <script src="project-sidebar.js"></script>
+
+  </body>
+</html>

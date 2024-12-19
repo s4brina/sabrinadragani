@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sabrina Dragani - Professional UX and web designer specializing in creating intuitive user experiences, web solutions, and impactful marketing strategies." />
+  <meta name="author" content="Sabrina Dragani" />
+  <meta name="keywords"
+    content="Sabrina Dragani, UX portfolio, web design, marketing, user experience, web development, digital design, hire UX designer" />
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Sabrina Dragani - UX/Web Portfolio" />
+  <meta property="og:description"
+    content="Explore Sabrina Dragani's portfolio of UX design, web development, and digital marketing projects. Let's build intuitive and visually engaging web solutions together." />
+  <meta property="og:image" content="https://yourwebsite.com/portfolio-thumbnail.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <title>Sabrina Dragani</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="pls.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-container">
+        <img class="logo" src="sabrinalogo.png" alt="Sabrina Dragani" />
+        <img class="award-logo" src="adobe-award.png" alt="Award Logo" />
+      </a>
+      <div class="hamburger" data-target="#nav-links">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sabrina-dragani-1b0025208/" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn" class="icon-s" />
+          </a>
+          <a href="https://www.behance.net/yourprofile" target="_blank">
+            <img src="behance.png" alt="Behance" class="icon-s" />
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    document.querySelector(".hamburger").addEventListener("click", function () {
+  const target = document.querySelector(this.getAttribute("data-target"));
+  target.classList.toggle("active");
+});
+
+  </script>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p>📍 <b>Brisbane</b>, Australia</p>
+      <h2>Hello! I'm Sabrina.</h2>
+      <p>
+        QUT Interaction Design graduate specializing in front-end development, UX design, and marketing. Passionate about enhancing user experiences through technology.
+      </p>
+      <ul class="nav-links" id="nav-links">
+      <a href="#projects" class="cta-button">View My Work</a>
+      </ul>
+    </div>
+    <img src="meagain.png" alt="Sabrina's Image" class="hero-image fade-in" />
+  </section>
+
+  <div class="icons-container">
+    <img src="logos/html.png" alt="Icon 1" class="icon">
+    <img src="logos/css.png" alt="Icon 2" class="icon">
+    <img src="logos/js.png" alt="Icon 3" class="icon">
+    <img src="logos/wordpress.png" alt="Icon 4" class="icon">
+    <img src="logos/elementor.png" alt="Icon 5" class="icon">
+    <img src="logos/mysql.png" alt="Icon 5" class="icon">
+    <img src="logos/bootstrap.png" alt="Icon 5" class="icon">
+    <img src="logos/scss.png" alt="Icon 5" class="icon">
+    <img src="logos/aws.png" alt="Icon 5" class="icon">
+    <img src="logos/react.png" alt="Icon 5" class="icon">
+    <img src="logos/nodejs.png" alt="Icon 5" class="icon">
+    <img src="logos/github.png" alt="Icon 5" class="icon">
+    <img src="logos/creativecloud.png" alt="Icon 5" class="icon">
+    <img src="logos/figma.png" alt="Icon 5" class="icon">
+    <img src="logos/arduino.png" alt="Icon 5" class="icon">
+  </div>
+
+  <section id="about" class="about">
+    <div class="about-section-one  fade-in">
+      <img class="about-me" src="aboutme.png" alt="Award Logo" />
+    </div>
+    <div class="about-section-two">
+      <h2>About Me</h2>
+      <p>
+        Hi!👋 I'm Sabrina. I have years of hands-on experience in UX design, web
+        development, marketing and understand the value of business.
+        <br /><br />
+
+        I completed a Bachelor of Interaction Design at QUT in 2024, where I
+        built a solid foundation in web development and UX design. This
+        experience equipped me with the ability to bridge the creative and
+        technical aspects of online business and web design. You can explore
+        my specific skills <a href="#skills">here.</a>
+
+        <br /><br />
+        I am passionate about emerging technologies like AI, programming, and
+        creating visually striking designs. I deeply value the design process,
+        understanding what it takes to achieve a great outcome. I also
+        recognize the critical role of user feedback and prioritize making
+        designs that are accessible and inclusive.
+
+        <br /><br />
+        I thrive in environments that value both the technical and creative
+        aspects of projects. I believe my skills can bring significant value
+        to any organization.
+        <br /><br />
+        I would love to hear from you if you have any questions!
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+      <p>Here are some of my projects from the past few years that I feel best represent my abilities. These projects all involve UX and UI design. </p>
+      <div class="details"></div>
+    <div class="project-list  fade-in">
+
+      <a href="tabled.html" class="project-item">
+        <div class="award-icon">
+          <img src="croppedaward.png" alt="Award Winning Icon" />
+        </div>
+        <img src="tabled.png" alt="TabLED - The Interactive LED Table" />
+        <div class="notification-bubble-container">
+          <div class="notification-bubble">UX/UI</div>
+          <div class="notification-bubble">Javascript</div>
+          <div class="notification-bubble">Web Deployment</div>
+          <div class="notification-bubble">Arduino</div>
+          <div class="notification-bubble">Industrial Design</div>
+        </div>
+        <h3>TabLED - The Interactive LED Table</h3>
+        <p>
+          Built an interactive table, solo, for my QUT capstone project. I am honoured to have this project awarded by Adobe.
+        </p>
+
+      </a>
+      <a href="y2kore.html" class="project-item">
+        <div class="award-icon small">
+          <img src="logos/shopify.png" alt="Award Winning Icon" />
+        </div>
+        <img src="y2kore.png" alt="Project Title 4" />
+        <div class="notification-bubble-container">
+          <div class="notification-bubble">Shopify</div>
+          <div class="notification-bubble">UX/UI</div>
+          <div class="notification-bubble">Business Strategy</div>
+          <div class="notification-bubble">Marketing</div>
+          <div class="notification-bubble">SEO, ROI, POS</div>
+          <div class="notification-bubble">Social Media</div>
+        </div>
+        <h3>Y2KORESHOP - Y2K Clothing</h3>
+        <p>Successfully ran my own dropshipping store - my first business venture.</p>
+      </a>
+
+      <a href="eek.html" class="project-item">
+        <div class="award-icon small">
+          <img src="logos/html.png" alt="Award Winning Icon" />
+          <img src="logos/css.png" alt="Award Winning Icon" />
+          <img src="logos/js.png" alt="Award Winning Icon" />
+        </div>
+        <img src="eek2.png" alt="Project Title 2" />
+
+        <div class="notification-bubble-container">
+          <div class="notification-bubble">HTML, CSS, JS</div>
+          <div class="notification-bubble">Github</div>
+          <div class="notification-bubble">Static Web Server</div>
+        </div>
+
+
+
+        <h3>eek.cool - A Brutalist Portfolio</h3>
+        <p>
+          An experimental film portfolio that I was hired to design, develop, and
+          deploy.
+        </p>
+      </a>
+      <a href="volcano-explorer.html" class="project-item">
+        <div class="award-icon small">
+          <img src="logos/react.png" alt="Award Winning Icon" />
+          <img src="logos/nodejs.png" alt="Award Winning Icon" />
+        </div>
+        <img src="volcano-img.jpg" alt="Project Title 3" />
+        <div class="notification-bubble-container">
+
+          <div class="notification-bubble">React</div>
+          <div class="notification-bubble">API Implementation</div>
+          <div class="notification-bubble">Node.js</div>
+          <div class="notification-bubble">npm</div>
+          <div class="notification-bubble">Dynamic Web Hosting</div>
+        </div>
+        <h3>Volcano Explorer (API Application)</h3>
+        <p>A React-based web application to analyse volcano data via a REST API.</p>
+      </a>
+      
+  </section>
+  <div class="all-my-skills">
+    <h2 class="small-titles">My Skills</h2>
+    <section id="skills" class="skills">
+      <div class="skill-box">
+        <div class="specialty-one">
+          <h4>💻 UX Design</h4><br>
+          <ul class="list-of-skills">
+            <li>User Research and Usability Testing</li>
+            <li>Persona Development</li>
+            <li>Journey Mapping and User Flows</li>
+            <li>Wireframing and Prototyping</li>
+            <li>Interaction Design (IxD)</li>
+            <li>Usability Heuristics and Accessibility Principles</li>
+            <li>Responsive Design and Mobile-First Design</li>
+            <li>A/B Testing and Data-Driven Design</li>
+            <li>User-Centered Design (UCD)</li>
+            <li>Wireframing and Mockups (Low-Fi and Hi-Fi)</li>
+            <li>UX Strategy and Planning</li>
+            <li>UX Writing and Microcopy</li>
+            <li>Agile UX Methodologies</li>
+          </ul>
+        </div>
+
+        <div class="specialty-two">
+          <h4>🌈 Visual Design</h4><br>
+          <ul class="list-of-skills">
+            <li>User Experience Design</li>
+            <li>Motion Graphics and Filmography</li>
+            <li>Proficient in Adobe Creative Suite (Photoshop, Illustrator, After Effects, and more)</li>
+            <li>Proficient in Figma for UI/UX and visual design</li>
+            <li>Strong Visual Design Skills with a keen eye for detail</li>
+            <li>Proven Expertise in Branding and Visual Identity</li>
+            <li>Web and Digital Visual Design Experience</li>
+            <li>Responsive Design and Mobile-First Approach</li>
+            <li>Knowledge of Emerging Technologies (AI and Interactive Media)</li>
+            <li>Creative Problem-Solving through Visual Design</li>
+            <li>Experience with Accessibility Standards and Inclusive Design</li>
+            <li>Strong Visual Storytelling and Presentation Skills</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+      <div class="skill-box">
+        <div class="specialty-one">
+          <h4>👩‍💻 Web Development</h4><br>
+          <ul class="list-of-skills">
+            <li>HTML5 and CSS3</li>
+            <li>Javascript</li>
+            <li>Responsive Web Design</li>
+            <li>Cross-Browser Compatibility</li>
+            <li>Version Control (Git/GitHub)</li>
+            <li>Basic Front-End Framework Knowledge (React)</li>
+            <li>Basic Back-End Development (Node.js, Express)</li>
+            <li>API Integration (RESTful APIs, GraphQL)</li>
+            <li>Database Management (SQL)</li>
+            <li>CSS Preprocessors (SASS)</li>
+            <li>Web Performance Optimization</li>
+            <li>Content Management Systems (WordPress)</li>
+            <li>WordPress Theme and Plugin Development</li>
+            <li>WordPress Customization (PHP, MySQL)</li>
+            <li>Web Accessibility (WCAG, ARIA)</li>
+            <li>Continuous Integration and Deployment (CI/CD)</li>
+          </ul>
+        </div>
+
+        <div class="specialty-two">
+          <h4>💫 Marketing</h4><br>
+          <ul class="list-of-skills">
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Content Marketing</li>
+            <li>Social Media Marketing (Facebook, Instagram, LinkedIn, Twitter)</li>
+            <li>Email Marketing and Automation</li>
+            <li>Affiliate Marketing</li>
+            <li>Brand Strategy and Positioning</li>
+            <li>Market Research and Consumer Insights</li>
+            <li>Conversion Rate Optimization (CRO)</li>
+            <li>Google Analytics and Data Analysis</li>
+            <li>Customer Relationship Management (CRM) Systems (HubSpot, Salesforce)</li>
+            <li>Product Launches and Campaign Management</li>
+            <li>Content Creation and Copywriting</li>
+            <li>Event Marketing and Trade Shows</li>
+            <li>Marketing Automation Tools (Mailchimp, Marketo)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="resume">
+    <div class="resume-one">
+      <img src="crowd.png" class="res-img" alt="Project Title 5" />
+    </div>
+    <div class="resume-two">
+      <h2 class="small-titles resume-title">Resume and Experience</h2>
+
+      <div class="resume">
+
+        <p class="resume-info">
+          If you are interested in my previous work experience and a deeper look into my skills, download my
+          resume.</a>
+        </p>
+
+      </div>
+      <a href="Sabrina-Dragani-Resume.pdf" target="_blank" class="cta-button">Download my Resume</a>
+
+    </div>
+  </section>
+
+  <h2 class="small-titles">Awards</h2>
+  <section id="awards" class="awards">
+    <div class="award-box">
+      <div>
+        <img src="adobeaward-pic.jpg" class="award-img" alt="Project Title 5" /><br>
+        <p class="award-info">
+          2024 QUT Adobe Creative Award - Recognising young designers with a
+          strong creative vision and inspirational work.
+        </p>
+      </div>
+      <div>
+        <img src="2022-academic-excellence.png" class="award-img" alt="Project Title 5" /><br>
+        <p class="award-info">
+          2022 QUT Executive Deans’ Commendation for Academic Excellence in the Bachelor of Design for achieving a 7 GPA
+        </p>
+      </div>
+
+      <div>
+        <img src="2021-6.5.png" class="award-img" alt="Project Title 5" /><br>
+        <p class="award-info">
+          2021 QUT Executive Deans’ Commendation for Academic Excellence in the Creative Industries for achieving a 6.5
+          GPA
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xdkoyrep" method="POST" class="styled-form">
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+    <p>
+      <a href="mailto:your.email@example.com">sabrina.bridget@outlook.com</a>
+    </p><br>
+
+    <p class="tiny">I made this website from scratch to showcase my skills! 🐸</p>
+  </footer>
+
+
+
+
+
+
+
+  <script>
+
+    
+    const navLinks = document.querySelector(".nav-links a");
+
+    const navLinkItems = document.querySelectorAll(".nav-links a");
+    navLinkItems.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Select all elements with the 'fade-in' class
+    const fadeElements = document.querySelectorAll(".fade-in");
+    function checkFadeIn() {
+      fadeElements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          element.classList.add("show");
+        }
+      });
+    }
+    window.addEventListener("scroll", checkFadeIn);
+    window.addEventListener("resize", checkFadeIn);
+    document.addEventListener("DOMContentLoaded", checkFadeIn);
+
+    // Listen for scroll and resize events to trigger the fade-in effect
+    window.addEventListener("scroll", checkFadeIn);
+    window.addEventListener("resize", checkFadeIn);
+
+    // Initial check to fade in elements already in view
+    document.addEventListener("DOMContentLoaded", checkFadeIn);
+  </script>
+</body>
+
+</html>
