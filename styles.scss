@@ -2,12 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Rammetto+One&display=swap');
 
+
+
 @font-face {
   font-family: 'Agrandir';
   src: url('fonts/Agrandir-GrandHeavy.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 $primary-color: #111;
 $secondary-color: #333;
@@ -225,7 +227,7 @@ body {
 
 .award-box {
   padding-inline: 3rem;
-  gap: 10%;
+  gap: 5%;
   div {
     max-width: 250px;
   }
