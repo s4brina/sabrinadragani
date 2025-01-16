@@ -420,4 +420,15 @@
   </script>
 </body>
 
+  <script>
+    // Check the URL path
+    if (window.location.pathname === '/home') {
+        // If the path is /home, stay on the current page
+        console.log('User is on /home');
+    } else if (window.location.pathname === '/') {
+        // Redirect to /home if the user is on the root
+        window.location.href = '/home';
+    }
+</script>
+
 </html>
